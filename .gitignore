@@ -6,3 +6,4 @@ typings
 
 # tar
 kitoon-*.tar.gz
+.vscode/*

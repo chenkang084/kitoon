@@ -152,6 +152,7 @@ gulp.task('compile', ['tslint', 'tsc', 'browserify', 'sass', 'css', 'templates',
 gulp.task('watch', function () {
     gulp.watch(path.tscripts, ['browserify']);
     gulp.watch(path.styles, ['sass']);
+    gulp.watch(path.partials, ['html']);
 });
 
 gulp.task('clean', function () {
