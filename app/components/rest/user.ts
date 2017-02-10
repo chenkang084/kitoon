@@ -8,10 +8,11 @@ export class UserService {
     
     constructor(rest: restangular.ICollection) {
         this.rest = rest.withConfig((RestangularConfigurer) => {
-            RestangularConfigurer.setBaseUrl('/api/v1/');
+            // RestangularConfigurer.setBaseUrl('/api/v1/');
         });
         this.restFull = rest.withConfig((RestangularConfigurer) => {
-            RestangularConfigurer.setBaseUrl('/api/v1/');
+            // RestangularConfigurer.setBaseUrl('/api/v1/');
+            // RestangularConfigurer
             RestangularConfigurer.setFullResponse(true);
         });
     }
